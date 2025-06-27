@@ -16,7 +16,7 @@ function ResumeNew() {
     setWidth(window.innerWidth);
   }, []);
 
-  const pdf = "/Mohammed ABDUL MOID.pdf";
+  const pdf = "/Mohammed ABDUL MOID (4).pdf";
 
   return (
     <div>
