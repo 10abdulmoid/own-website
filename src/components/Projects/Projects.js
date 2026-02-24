@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import print from "../../Assets/Projects/4.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import post from "../../Assets/Projects/3.png";
+import chatify from "../../Assets/Projects/1.png";
+import blog from "../../Assets/Projects/5.png";
+import frg from "../../Assets/Projects/2.png";
 
 function Projects() {
   return (
@@ -34,59 +34,49 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={frg}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink=""
+              title="Face recognition CLI"
+              description="Facerecognition-cli- is a Python-based command-line interface (CLI) tool designed for facial recognition tasks. It allows users to detect and recognize faces in images or video streams directly from the terminal. The project leverages popular machine learning libraries and computer vision techniques to provide accurate and efficient face detection."
+              ghLink="https://github.com/10abdulmoid/Facerecognition-cli"
               demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={post}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink=""
+              title="Postagent"
+              description="A human-in-the-loop autonomous agent that collects tech articles from RSS feeds, generates LinkedIn-ready post drafts, and posts to LinkedIn via the official API only after manual approval."
+              ghLink="https://github.com/10abdulmoid/Postagent"
               demoLink=""              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={print}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink=""
+              title="Printer API"
+              description="A production-quality .NET 8 ASP.NET Core REST API for managing printers, print queues, and print jobs. This service mimics the core workflow of an enterprise print service backend by handling printer registration, queue management, job submission, and background job processing."
+              ghLink="https://github.com/10abdulmoid/Printer-api"
               demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={blog}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink=""
+              title="Blog-website"
+              description="Dark Blog - Minimalist dark theme w/ purple accents. Pure HTML/CSS, mobile-ready. Perfect for devs & writers. Clone & deploy!"
+              ghLink="blog-website-pi-five.vercel.app"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink=""
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          
         </Row>
       </Container>
     </Container>
